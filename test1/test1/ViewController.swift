@@ -20,6 +20,8 @@ class ViewController: UIViewController {
     tableViewView.register(UINib(nibName: "CustomTableViewCell", bundle: nil), forCellReuseIdentifier: "CustomCell")
   }
 
+  
+  caca is strong
   override func viewWillAppear(_ animated: Bool) {
     tableViewView.reloadData()
   }
