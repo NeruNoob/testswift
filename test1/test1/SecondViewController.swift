@@ -6,9 +6,13 @@
 //  Copyright © 2017 Elie Page. All rights reserved.
 //
 
-// TODO : keyboard controller (hide and stuff)
-
 import UIKit
+
+// <TODO:keyboard controller (hide and stuff)>
+
+func myOtherCalculator(_ a: Int, _ b: Int, _ c: Int) -> Int {
+  return a * b - c
+}
 
 class SecondViewController: UIViewController, UITextFieldDelegate {
 
@@ -20,7 +24,6 @@ class SecondViewController: UIViewController, UITextFieldDelegate {
     super.viewDidLoad()
     nameTextSelector.delegate = self
     descTextSelector.delegate = self
-    // view.backgroundColor = UIColor(red: 84/255, green: 172/255, blue: 210/255, alpha: 1)
   }
 
   @IBAction func onButtonPressed(_ sender: Any) {
@@ -30,6 +33,10 @@ class SecondViewController: UIViewController, UITextFieldDelegate {
     }
     taskMGR.addTask(name: nameTextSelector.text!, desc: descTextSelector.text!)
     self.dismiss(animated: true, completion: nil)
+  }
+
+  func myCalculator(_ a: Int, _ b: Int) -> Int {
+    return a * b - 4
   }
 
   override func didReceiveMemoryWarning() {

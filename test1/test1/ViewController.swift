@@ -51,11 +51,7 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
 
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     let cell: CustomTableViewCell = tableView.dequeueReusableCell(withIdentifier: "CustomCell", for: indexPath) as! CustomTableViewCell
-    
     cell.updateCell(ind: indexPath.row)
-    /* let cell: UITableViewCell = UITableViewCell(style: UITableViewCellStyle.subtitle , reuseIdentifier: "default")
-    cell.textLabel?.text = taskMGR.tasks[indexPath.row].name
-    cell.detailTextLabel?.text = taskMGR.tasks[indexPath.row].desc */
     return cell
   }
 
