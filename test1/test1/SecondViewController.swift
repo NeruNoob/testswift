@@ -6,7 +6,7 @@
 //  Copyright © 2017 Elie Page. All rights reserved.
 //
 
-//TODO : keyboard controller (hide and stuff)
+// TODO : keyboard controller (hide and stuff)
 
 import UIKit
 
@@ -20,7 +20,7 @@ class SecondViewController: UIViewController, UITextFieldDelegate {
     super.viewDidLoad()
     nameTextSelector.delegate = self
     descTextSelector.delegate = self
- //   view.backgroundColor = UIColor(red: 84/255, green: 172/255, blue: 210/255, alpha: 1)
+    // view.backgroundColor = UIColor(red: 84/255, green: 172/255, blue: 210/255, alpha: 1)
   }
   
   @IBAction func onButtonPressed(_ sender: Any) {
@@ -35,4 +35,5 @@ class SecondViewController: UIViewController, UITextFieldDelegate {
   override func didReceiveMemoryWarning() {
     super.didReceiveMemoryWarning()
   }
+
 }

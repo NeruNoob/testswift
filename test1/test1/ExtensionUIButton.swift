@@ -15,4 +15,5 @@ extension UIButton {
     setTitle(title, for: .normal)
     sizeToFit()
   }
+
 }

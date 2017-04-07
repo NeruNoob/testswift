@@ -19,5 +19,5 @@ extension UITextField {
     //custom position Frame (redefined)
     self.frame = CGRect(x: 0.1 * UIScreen.main.bounds.width, y: self.frame.origin.y, width: 0.8 * UIScreen.main.bounds.width, height: self.frame.size.height)
   }
-  
+
 }
