@@ -13,6 +13,11 @@ class ViewController: UIViewController {
   @IBOutlet weak var newTaskButton: UIButton!
   @IBOutlet weak var tableViewView: UITableView!
 
+  // vars for tests
+  var i = 0
+  var j = 1
+  var k = 2
+
   override func viewDidLoad() {
     super.viewDidLoad()
     tableViewView.delegate = self
@@ -28,21 +33,45 @@ class ViewController: UIViewController {
     super.didReceiveMemoryWarning()
   }
 
-  // ADD button - SecondViewController - testing stuff
+  // Voluntary same body as previous function, only name changes, could be refactorised easily
   @IBAction func onButtonOnePressed(_ sender: Any) {
     let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
     let viewController: UIViewController = storyBoard.instantiateViewController(withIdentifier: "SecondViewController") as! SecondViewController
     self.present(viewController, animated: true, completion: nil)
   }
 
+  // Voluntary same body as previous function, only name changes, could be refactorised easily
   @IBAction func onButtonPressed(_ sender: Any) {
     let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
     let viewController: UIViewController = storyBoard.instantiateViewController(withIdentifier: "SecondViewController") as! SecondViewController
     self.present(viewController, animated: true, completion: nil)
   }
 
+  // not used and also duplicated code from another func
+  func testingStuff() -> Int {
+    if i >= j {
+      j = j + i
+    } else {
+      i = j + i
+    }
+    k = max(i, j)
+    return k
+  }
+
+  // not used and also duplicated code from another func
+  func testingStuffBis() -> String {
+    if i >= j {
+      j = j + i
+    } else {
+      i = j + i
+    }
+    k = max(i, j)
+    return String(k)
+  }
+
 }
 
+// MARK: - UITableViewDataSource, UITableViewDelegate
 extension ViewController: UITableViewDataSource, UITableViewDelegate {
 
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

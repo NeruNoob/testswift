@@ -8,8 +8,9 @@
 
 import UIKit
 
-// <TODO:keyboard controller (hide and stuff)>
+// <TODO: keyboard controller (hide and stuff)>
 
+// never used
 func myOtherCalculator(_ a: Int, _ b: Int, _ c: Int) -> Int {
   return a * b - c
 }
@@ -35,6 +36,7 @@ class SecondViewController: UIViewController, UITextFieldDelegate {
     self.dismiss(animated: true, completion: nil)
   }
 
+  // never used
   func myCalculator(_ a: Int, _ b: Int) -> Int {
     return a * b - 4
   }
