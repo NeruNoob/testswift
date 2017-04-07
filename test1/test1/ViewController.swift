@@ -36,14 +36,14 @@ class ViewController: UIViewController {
   // Voluntary same body as previous function, only name changes, could be refactorised easily
   @IBAction func onButtonOnePressed(_ sender: Any) {
     let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-    let viewController: UIViewController = storyBoard.instantiateViewController(withIdentifier: "SecondViewController") as! SecondViewController
+    let viewController: UIViewController = (storyBoard.instantiateViewController(withIdentifier: "SecondViewController") as? SecondViewController)!
     self.present(viewController, animated: true, completion: nil)
   }
 
   // Voluntary same body as previous function, only name changes, could be refactorised easily
   @IBAction func onButtonPressed(_ sender: Any) {
     let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-    let viewController: UIViewController = storyBoard.instantiateViewController(withIdentifier: "SecondViewController") as! SecondViewController
+    let viewController: UIViewController = (storyBoard.instantiateViewController(withIdentifier: "SecondViewController") as? SecondViewController)!
     self.present(viewController, animated: true, completion: nil)
   }
 
