@@ -48,7 +48,7 @@ class ViewController: UIViewController {
   }
 
   // not used and also duplicated code from another func
-  func testingStuff() -> Int {
+  func testingStuffInt() -> Int {
     if i >= j {
       j = j + i
     } else {
@@ -61,7 +61,7 @@ class ViewController: UIViewController {
   }
 
   // not used and also duplicated code from another func
-  func testingStuffBis() -> Int {
+  func testingStuffString() -> String {
     if i >= j {
       j = j + i
     } else {
@@ -70,7 +70,7 @@ class ViewController: UIViewController {
     k = max(i, j)
     print(i, " ", j, " ", k)
     print("same thing than the other func")
-    return k
+    return String(k)
   }
 
 }
