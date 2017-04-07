@@ -22,6 +22,7 @@
 		169928ED1E92751400F89375 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 169928EB1E92751400F89375 /* LaunchScreen.storyboard */; };
 		169928F81E92751400F89375 /* test1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169928F71E92751400F89375 /* test1Tests.swift */; };
 		169929031E92751400F89375 /* test1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169929021E92751400F89375 /* test1UITests.swift */; };
+		16D3A9C51E97E4AA0093DFD4 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D3A9C41E97E4AA0093DFD4 /* TableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		169928FE1E92751400F89375 /* test1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = test1UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		169929021E92751400F89375 /* test1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test1UITests.swift; sourceTree = "<group>"; };
 		169929041E92751400F89375 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		16D3A9C41E97E4AA0093DFD4 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +129,7 @@
 				164017771E9524300063F530 /* ExtensionUIButton.swift */,
 				1640177B1E95413E0063F530 /* CustomTableViewCell.swift */,
 				1640177C1E95413E0063F530 /* CustomTableViewCell.xib */,
+				16D3A9C41E97E4AA0093DFD4 /* TableViewCell.swift */,
 			);
 			path = test1;
 			sourceTree = "<group>";
@@ -289,6 +292,7 @@
 				161F84321E93E60F00BFA8F6 /* TaskManager.swift in Sources */,
 				164017741E94E8520063F530 /* MyCellController.swift in Sources */,
 				1640177A1E952FF90063F530 /* ExtensionUIColor.swift in Sources */,
+				16D3A9C51E97E4AA0093DFD4 /* TableViewCell.swift in Sources */,
 				164017761E9517640063F530 /* ExtensionUITextField.swift in Sources */,
 				164017781E9524300063F530 /* ExtensionUIButton.swift in Sources */,
 				169928E51E92751400F89375 /* ViewController.swift in Sources */,
