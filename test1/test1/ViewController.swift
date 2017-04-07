@@ -55,6 +55,8 @@ class ViewController: UIViewController {
       i = j + i
     }
     k = max(i, j)
+    print(i, " ", j, " ", k)
+    print("same thing than the other func")
     return k
   }
 
@@ -66,6 +68,8 @@ class ViewController: UIViewController {
       i = j + i
     }
     k = max(i, j)
+    print(i, " ", j, " ", k)
+    print("same thing than the other func")
     return String(k)
   }
 

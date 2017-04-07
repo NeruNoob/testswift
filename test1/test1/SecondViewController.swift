@@ -8,7 +8,7 @@
 
 import UIKit
 
-// <TODO: keyboard controller (hide and stuff)>
+// <TODO: keyboardController>
 
 // never used
 func myOtherCalculator(_ a: Int, _ b: Int, _ c: Int) -> Int {
