@@ -23,12 +23,12 @@ class ViewController: UIViewController {
   override func viewWillAppear(_ animated: Bool) {
     tableViewView.reloadData()
   }
-  
+
   override func didReceiveMemoryWarning() {
     super.didReceiveMemoryWarning()
   }
 
-  //ADD button - SecondViewController - testing stuff
+  // ADD button - SecondViewController - testing stuff
   @IBAction func onButtonOnePressed(_ sender: Any) {
     let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
     let viewController: UIViewController = storyBoard.instantiateViewController(withIdentifier: "SecondViewController") as! SecondViewController
@@ -43,7 +43,7 @@ class ViewController: UIViewController {
 
 }
 
-extension ViewController: UITableViewDataSource, UITableViewDelegate{
+extension ViewController: UITableViewDataSource, UITableViewDelegate {
 
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
     return taskMGR.tasks.count
@@ -53,10 +53,9 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate{
     let cell: CustomTableViewCell = tableView.dequeueReusableCell(withIdentifier: "CustomCell", for: indexPath) as! CustomTableViewCell
     
     cell.updateCell(ind: indexPath.row)
-    /*let cell: UITableViewCell = UITableViewCell(style: UITableViewCellStyle.subtitle , reuseIdentifier: "default")
+    /* let cell: UITableViewCell = UITableViewCell(style: UITableViewCellStyle.subtitle , reuseIdentifier: "default")
     cell.textLabel?.text = taskMGR.tasks[indexPath.row].name
-
-    cell.detailTextLabel?.text = taskMGR.tasks[indexPath.row].desc*/
+    cell.detailTextLabel?.text = taskMGR.tasks[indexPath.row].desc */
     return cell
   }
 
@@ -64,7 +63,7 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate{
     print(indexPath.row)
     let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
     let viewController: MyCellController = storyBoard.instantiateViewController(withIdentifier: "MyCellController") as! MyCellController
-    viewController.ind = indexPath.row;
+    viewController.ind = indexPath.row
     self.present(viewController, animated: true, completion: nil)
   }
 
