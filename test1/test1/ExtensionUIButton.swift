@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 extension UIButton {
-  
+
   func addNormalTitleAndFit(_ title: String) {
     setTitle(title, for: .normal)
     sizeToFit()

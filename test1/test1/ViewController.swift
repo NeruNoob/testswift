@@ -12,7 +12,7 @@ class ViewController: UIViewController {
 
   @IBOutlet weak var newTaskButton: UIButton!
   @IBOutlet weak var tableViewView: UITableView!
-  
+
   override func viewDidLoad() {
     super.viewDidLoad()
     tableViewView.delegate = self

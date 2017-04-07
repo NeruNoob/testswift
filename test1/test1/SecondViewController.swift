@@ -11,18 +11,18 @@
 import UIKit
 
 class SecondViewController: UIViewController, UITextFieldDelegate {
-  
+
   @IBOutlet weak var nameTextSelector: UITextField!
   @IBOutlet weak var descTextSelector: UITextField!
   @IBOutlet weak var addTaskButton: UIButton!
-  
+
   override func viewDidLoad() {
     super.viewDidLoad()
     nameTextSelector.delegate = self
     descTextSelector.delegate = self
     // view.backgroundColor = UIColor(red: 84/255, green: 172/255, blue: 210/255, alpha: 1)
   }
-  
+
   @IBAction func onButtonPressed(_ sender: Any) {
     guard nameTextSelector.text != "" else {
       print("champ(s) vide(s)")
@@ -31,7 +31,7 @@ class SecondViewController: UIViewController, UITextFieldDelegate {
     taskMGR.addTask(name: nameTextSelector.text!, desc: descTextSelector.text!)
     self.dismiss(animated: true, completion: nil)
   }
-  
+
   override func didReceiveMemoryWarning() {
     super.didReceiveMemoryWarning()
   }

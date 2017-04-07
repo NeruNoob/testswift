@@ -9,14 +9,14 @@
 import UIKit
 
 class MyCellController: UIViewController {
-  
+
   var ind = 0
-  
+
   @IBOutlet weak var titleField: UITextField!
   @IBOutlet weak var descField: UITextField!
   @IBOutlet weak var buttonEdit: UIButton!
   @IBOutlet weak var buttonDelete: UIButton!
-  
+
   override func viewDidLoad() {
     super.viewDidLoad()
     print("index : ", ind)
@@ -29,7 +29,7 @@ class MyCellController: UIViewController {
     buttonEdit.addNormalTitleAndFit("Edit")
     buttonDelete.addNormalTitleAndFit("Delete")
   }
-  
+
   @IBAction func onDeleteButtonPress(_ sender: Any) {
     if buttonDelete.title(for: .normal) == "Delete" {
       taskMGR.removeTaskAtIndice(ind: ind)
@@ -43,7 +43,7 @@ class MyCellController: UIViewController {
       descField.text = taskMGR.tasks[ind].desc
     }
   }
-  
+
   @IBAction func OnEditButtonPress(_ sender: Any) {
     if buttonEdit.title(for: .normal) == "Edit" {
       titleField.isUserInteractionEnabled = true
@@ -55,7 +55,7 @@ class MyCellController: UIViewController {
       self.dismiss(animated: true, completion: nil)
     }
   }
-  
+
   override func didReceiveMemoryWarning() {
     super.didReceiveMemoryWarning()
     // Dispose of any resources that can be recreated.

@@ -28,7 +28,7 @@ class TaskManager: NSObject {
       tasks[ind].name = name
     }
   }
-  
+
   func removeTaskAtIndice(ind: Int) {
     tasks.remove(at: ind)
     print("Removed task at indice : ", ind)

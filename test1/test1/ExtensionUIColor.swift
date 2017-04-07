@@ -11,7 +11,7 @@ import UIKit
 
 extension UIColor {
 
-  //Initialise a color from hex code (over RGB)
+  // Initialise a color from hex code (over RGB)
   convenience init(_ hexString: String) {
     let hex = hexString.trimmingCharacters(in: CharacterSet.alphanumerics.inverted)
     var int = UInt32()
