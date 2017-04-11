@@ -32,7 +32,7 @@ class test1Tests: XCTestCase {
   }
 
   func testCalc1() {
-    let result = add(2, 2)
+    let result = 2 + 2
     XCTAssert(result == 4, "woops")
   }
 
