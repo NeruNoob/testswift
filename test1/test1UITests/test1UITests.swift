@@ -48,7 +48,7 @@ class test1UITests: XCTestCase {
 
     app.buttons["Delete"].tap()
     app.buttons["Add"].tap()
-    app.buttons["Add task"].tap()
+//    app.buttons["Add task"].tap()
 
     nameTextField.tap()
     nameTextField.typeText("gh in 4")
