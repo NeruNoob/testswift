@@ -31,4 +31,15 @@ class test1Tests: XCTestCase {
     XCTAssert(result == 4, "woops")
   }
 
+  func testStuffInt() {
+    var result = vc.testingStuffInt()
+    XCTAssert(result == 1, "marche pas : 1")
+    result = vc.testingStuffInt()
+    XCTAssert(result == 2, "marche pas : 2")
+    result = vc.testingStuffInt()
+    XCTAssert(result == 3, "marche pas : 3")
+    result = vc.testingStuffInt()
+    XCTAssert(result == 5, "marche pas : 5")
+  }
+
 }
