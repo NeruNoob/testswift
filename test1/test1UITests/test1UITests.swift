@@ -26,38 +26,18 @@ class test1UITests: XCTestCase {
   }
 
   func testExample() {
-    XCUIApplication().buttons["Add"].tap()
-    
     let app = XCUIApplication()
-    let nameTextField = app.textFields["Name"]
-    nameTextField.tap()
-    
-    let zKey = app.keys["z"]
-    zKey.tap()
-    zKey.tap()
-    app.keys["e"].tap()
-    nameTextField.typeText("ze")
-    app.keys["r"].tap()
-    nameTextField.typeText("r")
-    app.keys["t"].tap()
-    nameTextField.typeText("t")
-    app.otherElements["sert"].tap()
+    app.buttons["Add"].tap()
 
+    let nameTextField = app.textFields["Name"]
     let descriptionTextField = app.textFields["Description"]
-    descriptionTextField.tap()
-    
-    let eKey = app.keys["e"]
-    eKey.tap()
-    eKey.tap()
-    app.keys["r"].tap()
-    descriptionTextField.typeText("er")
-    app.keys["t"].tap()
-    descriptionTextField.typeText("t")
-    app.keys["g"].tap()
-    descriptionTextField.typeText("g")
-    app.otherElements["day"].tap()
-    
     let datePickersQuery = app.datePickers
+
+    nameTextField.tap()
+    nameTextField.typeText("zest")
+    descriptionTextField.tap()
+    descriptionTextField.typeText("citron")
+
     datePickersQuery.pickerWheels["Today"].swipeDown()
     datePickersQuery.pickerWheels["Mon, Apr 10"].swipeDown()
     app.switches["1"].tap()
@@ -69,21 +49,10 @@ class test1UITests: XCTestCase {
     app.buttons["Add task"].tap()
 
     nameTextField.tap()
-    app.keys["g"].tap()
-    nameTextField.typeText("gh")
-    
-    let moreKey = app.keys["more"]
-    moreKey.tap()
-    moreKey.tap()
-    app.keys["4"].tap()
-    nameTextField.typeText("4")
-    app.buttons["Add task"].tap()
-    app.buttons["Add"].tap()
+    nameTextField.typeText("gh in 4")
     app.switches["1"].tap()
-    app.switches["0"].tap()
-    nameTextField.tap()
-    app.otherElements["toto"].tap()
 
+    nameTextField.tap()
     app.textFields["Description"].tap()
     app.buttons["Add task"].tap()
 
