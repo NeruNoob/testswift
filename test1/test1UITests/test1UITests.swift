@@ -27,11 +27,12 @@ class test1UITests: XCTestCase {
 
   func testExample() {
     let app = XCUIApplication()
-    app.buttons["Add"].tap()
 
     let nameTextField = app.textFields["Name"]
     let descriptionTextField = app.textFields["Description"]
     let datePickersQuery = app.datePickers
+
+    app.buttons["Add"].tap()
 
     nameTextField.tap()
     nameTextField.typeText("zest")
@@ -42,6 +43,8 @@ class test1UITests: XCTestCase {
     app.switches["1"].tap()
     app.switches["0"].tap()
     app.buttons["Add task"].tap()
+
+    app.tables.staticTexts["zest"].tap()
 
     app.buttons["Delete"].tap()
     app.buttons["Add"].tap()
