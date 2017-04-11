@@ -16,9 +16,9 @@ class CustomTableViewCell: UITableViewCell {
 
   override func awakeFromNib() {
     super.awakeFromNib()
-    self.layer.cornerRadius = frame.size.height / 2
-    self.layer.borderWidth = 1
-    self.layer.masksToBounds = true
+    layer.cornerRadius = frame.size.height / 2
+    layer.borderWidth = 1
+    layer.masksToBounds = true
     // Initialization code
   }
 

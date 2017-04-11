@@ -33,7 +33,7 @@ class SecondViewController: UIViewController, UITextFieldDelegate {
       return
     }
     taskMGR.addTask(name: nameTextSelector.text!, desc: descTextSelector.text!)
-    self.dismiss(animated: true, completion: nil)
+    dismiss(animated: true, completion: nil)
   }
 
   // never used

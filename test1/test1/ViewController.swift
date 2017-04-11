@@ -37,14 +37,14 @@ class ViewController: UIViewController {
   @IBAction func onButtonOnePressed(_ sender: Any) {
     let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
     let viewController: UIViewController = (storyBoard.instantiateViewController(withIdentifier: "SecondViewController") as? SecondViewController)!
-    self.present(viewController, animated: true, completion: nil)
+    present(viewController, animated: true, completion: nil)
   }
 
   // Voluntary same body as previous function, only name changes, could be refactorised easily
   @IBAction func onButtonPressed(_ sender: Any) {
     let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
     let viewController: UIViewController = (storyBoard.instantiateViewController(withIdentifier: "SecondViewController") as? SecondViewController)!
-    self.present(viewController, animated: true, completion: nil)
+    present(viewController, animated: true, completion: nil)
   }
 
   // not used and also duplicated code from another func
@@ -93,7 +93,7 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
     let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
     let viewController: MyCellController = storyBoard.instantiateViewController(withIdentifier: "MyCellController") as! MyCellController
     viewController.ind = indexPath.row
-    self.present(viewController, animated: true, completion: nil)
+    present(viewController, animated: true, completion: nil)
   }
 
   func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

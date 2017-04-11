@@ -159,6 +159,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 169929071E92751400F89375 /* Build configuration list for PBXNativeTarget "test1" */;
 			buildPhases = (
+				16BCEF691E9D0593005A28F5 /* ShellScript */,
 				169928DB1E92751400F89375 /* Sources */,
 				169928DC1E92751400F89375 /* Frameworks */,
 				169928DD1E92751400F89375 /* Resources */,
@@ -281,6 +282,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		16BCEF691E9D0593005A28F5 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which taylor >/dev/null; then\ntaylor -p ${PROJECT_DIR} -r xcode\nelse\necho \"Taylor not installed\"\nfi";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		169928DB1E92751400F89375 /* Sources */ = {

@@ -33,7 +33,7 @@ class MyCellController: UIViewController {
   @IBAction func onDeleteButtonPress(_ sender: Any) {
     if buttonDelete.title(for: .normal) == "Delete" {
       taskMGR.removeTaskAtIndice(ind: ind)
-      self.dismiss(animated: true, completion: nil)
+      dismiss(animated: true, completion: nil)
     } else {
       titleField.isUserInteractionEnabled = false
       descField.isUserInteractionEnabled = false
@@ -52,7 +52,7 @@ class MyCellController: UIViewController {
       buttonDelete.addNormalTitleAndFit("Undo")
     } else {
       taskMGR.editTaskAtIndice(name: titleField.text!, desc: descField.text!, ind: ind)
-      self.dismiss(animated: true, completion: nil)
+      dismiss(animated: true, completion: nil)
     }
   }
 
