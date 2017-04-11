@@ -38,8 +38,7 @@ class test1UITests: XCTestCase {
     descriptionTextField.tap()
     descriptionTextField.typeText("citron")
 
-    datePickersQuery.pickerWheels["Today"].swipeDown()
-//    datePickersQuery.pickerWheels["Mon, Apr 10"].swipeDown()
+    datePickersQuery.pickerWheels["Today"].adjust(toPickerWheelValue: "Mon, Apr 10")
     app.switches["1"].tap()
     app.switches["0"].tap()
     app.buttons["Add task"].tap()
