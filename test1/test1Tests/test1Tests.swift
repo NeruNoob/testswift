@@ -26,6 +26,10 @@ class test1Tests: XCTestCase {
     super.tearDown()
   }
 
+  func testView() {
+    vc.didReceiveMemoryWarning()
+  }
+
   func testCalc1() {
     let result = 2 + 2
     XCTAssert(result == 4, "woops")
@@ -40,6 +44,17 @@ class test1Tests: XCTestCase {
     XCTAssert(result == 3, "marche pas : 3")
     result = vc.testingStuffInt()
     XCTAssert(result == 5, "marche pas : 5")
+  }
+
+  func testStuffString() {
+    var result = vc.testingStuffString()
+    XCTAssert(result == "1", "marche pas : 1")
+    result = vc.testingStuffString()
+    XCTAssert(result == "2", "marche pas : 2")
+    result = vc.testingStuffString()
+    XCTAssert(result == "3", "marche pas : 3")
+    result = vc.testingStuffString()
+    XCTAssert(result == "5", "marche pas : 5")
   }
 
 }
