@@ -26,6 +26,67 @@ class test1UITests: XCTestCase {
   }
 
   func testExample() {
+    XCUIApplication().buttons["Add"].tap()
+    
+    let app = XCUIApplication()
+    let nameTextField = app.textFields["Name"]
+    nameTextField.tap()
+    
+    let zKey = app.keys["z"]
+    zKey.tap()
+    zKey.tap()
+    app.keys["e"].tap()
+    nameTextField.typeText("ze")
+    app.keys["r"].tap()
+    nameTextField.typeText("r")
+    app.keys["t"].tap()
+    nameTextField.typeText("t")
+    app.otherElements["sert"].tap()
+
+    let descriptionTextField = app.textFields["Description"]
+    descriptionTextField.tap()
+    
+    let eKey = app.keys["e"]
+    eKey.tap()
+    eKey.tap()
+    app.keys["r"].tap()
+    descriptionTextField.typeText("er")
+    app.keys["t"].tap()
+    descriptionTextField.typeText("t")
+    app.keys["g"].tap()
+    descriptionTextField.typeText("g")
+    app.otherElements["day"].tap()
+    
+    let datePickersQuery = app.datePickers
+    datePickersQuery.pickerWheels["Today"].swipeDown()
+    datePickersQuery.pickerWheels["Mon, Apr 10"].swipeDown()
+    app.switches["1"].tap()
+    app.switches["0"].tap()
+    app.buttons["Add task"].tap()
+
+    app.buttons["Delete"].tap()
+    app.buttons["Add"].tap()
+    app.buttons["Add task"].tap()
+
+    nameTextField.tap()
+    app.keys["g"].tap()
+    nameTextField.typeText("gh")
+    
+    let moreKey = app.keys["more"]
+    moreKey.tap()
+    moreKey.tap()
+    app.keys["4"].tap()
+    nameTextField.typeText("4")
+    app.buttons["Add task"].tap()
+    app.buttons["Add"].tap()
+    app.switches["1"].tap()
+    app.switches["0"].tap()
+    nameTextField.tap()
+    app.otherElements["toto"].tap()
+
+    app.textFields["Description"].tap()
+    app.buttons["Add task"].tap()
+
     // Use recording to get started writing UI tests.
     // Use XCTAssert and related functions to verify your tests produce the correct results.
   }
